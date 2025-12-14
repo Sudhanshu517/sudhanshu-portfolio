@@ -18,7 +18,7 @@ const allProjects = [
         description: "AI-powered DSA practice tracker that fetches questions from LeetCode, GFG, and TUF, displays recent activity, and generates personalized recommendations using Gemini API.",
         tags: ["Next.js","React", "Node.js", "Express", "Gemini API", "Tailwind CSS"],
         github: "https://github.com/Sudhanshu517/AIPrepTracker",
-        live: "https://aipreptracker.vercel.app/",
+        live: "https://aipreptracker-1.onrender.com",
         image: "https://placehold.co/600x400/0EA5E9/FFFFFF?text=AI+Prep+Tracker",
     },
     {
