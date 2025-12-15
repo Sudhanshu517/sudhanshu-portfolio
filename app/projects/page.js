@@ -27,7 +27,7 @@ const allProjects = [
         tags: ["React", "Node.js", "Express", "AI", "MongoDB"],
         github: "https://github.com/Sudhanshu517/FinSight-AI",
         live: "https://fin-sight-ai-wine.vercel.app/",
-        image: "https://placehold.co/600x400/F59E0B/FFFFFF?text=AI+Finance+Manager",
+        image: "https://placehold.co/600x400/F59E0B/FFFFFF?text=FinSight+AI",
     },
     {
         title: "Secure Password Manager",
