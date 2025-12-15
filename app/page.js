@@ -6,6 +6,13 @@ import Image from "next/image"
 
 export default function Home() {
   const featuredProjects = [
+     {
+        title: "FinSight AI",
+        description: "AI-assisted finance tracker that categorizes expenses, analyzes spending patterns, and generates smart budgeting recommendations. (Work in progress)",
+        tags: ["React", "Node.js", "Express", "AI", "MongoDB"],
+        github: "https://github.com/Sudhanshu517/FinSight-AI",
+        live: "https://fin-sight-ai-wine.vercel.app/",
+    },
     {
       title: "Startup Builder",
       description: "A full-stack drag-and-drop landing page builder with real-time canvas preview, reusable components, exportable templates, and PostgreSQL–backed persistence using Drizzle ORM.",
@@ -16,7 +23,7 @@ export default function Home() {
     {
       title: "AI Prep Tracker",
       description: "AI-powered DSA practice tracker that fetches questions from LeetCode, GFG, and TUF, displays recent activity, and generates personalized recommendations using Gemini API.",
-      tags: ["Next.js", "React", "Node.js", "Express", "Gemini API", "Tailwind CSS"],
+      tags: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Puppeteer", "Docker", "Clerk", "Gemini AI"],
       github: "https://github.com/Sudhanshu517/AIPrepTracker",
       live: "https://aipreptracker-1.onrender.com",
     },
@@ -28,13 +35,7 @@ export default function Home() {
       live: "https://react-password-manager-secure.vercel.app/",
     },
 
-    {
-      title: "Spotify UI Clone",
-      description: "A dynamic Spotify-like music player UI featuring playlist switching, real-time song updates, and interactive JavaScript functionality.",
-      tags: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/Sudhanshu517/Spotify-Clone",
-      video: "https://drive.google.com/file/d/1Ww-5umm3Tje7SLsSliQ8IlxNyPEfujq-/view",
-    },
+    
   ]
 
   return (

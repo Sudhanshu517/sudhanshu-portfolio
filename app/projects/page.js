@@ -16,10 +16,18 @@ const allProjects = [
     {
         title: "AI Prep Tracker",
         description: "AI-powered DSA practice tracker that fetches questions from LeetCode, GFG, and TUF, displays recent activity, and generates personalized recommendations using Gemini API.",
-        tags: ["Next.js","React", "Node.js", "Express", "Gemini API", "Tailwind CSS"],
+        tags: [ "React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Puppeteer", "Docker", "Clerk", "Gemini AI"],
         github: "https://github.com/Sudhanshu517/AIPrepTracker",
         live: "https://aipreptracker-1.onrender.com",
         image: "https://placehold.co/600x400/0EA5E9/FFFFFF?text=AI+Prep+Tracker",
+    },
+    {
+        title: "FinSight AI",
+        description: "AI-assisted finance tracker that categorizes expenses, analyzes spending patterns, and generates smart budgeting recommendations. (Work in progress)",
+        tags: ["React", "Node.js", "Express", "AI", "MongoDB"],
+        github: "https://github.com/Sudhanshu517/FinSight-AI",
+        live: "https://fin-sight-ai-wine.vercel.app/",
+        image: "https://placehold.co/600x400/F59E0B/FFFFFF?text=AI+Finance+Manager",
     },
     {
         title: "Secure Password Manager",
@@ -28,13 +36,6 @@ const allProjects = [
         github: "https://github.com/Sudhanshu517/react-password-manager-secure",
         live: "https://react-password-manager-secure.vercel.app/",
         image: "https://placehold.co/600x400/10B981/FFFFFF?text=Password+Manager",
-    },
-    {
-        title: "AI Finance Manager",
-        description: "AI-assisted finance tracker that categorizes expenses, analyzes spending patterns, and generates smart budgeting recommendations. (Work in progress)",
-        tags: ["React", "Node.js", "Express", "AI", "MongoDB"],
-        github: "https://github.com/Sudhanshu517/ai-finance-manager",
-        image: "https://placehold.co/600x400/F59E0B/FFFFFF?text=AI+Finance+Manager",
     },
     {
         title: "Spotify UI Clone",
