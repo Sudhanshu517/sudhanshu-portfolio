@@ -121,7 +121,7 @@ export default function About() {
                     <div className="relative">
                         <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-background bg-primary" />
                         <h3 className="text-xl font-bold text-text">Freelance Frontend Developer</h3>
-                        <p className="text-primary font-medium"> Sunsyze •  Nov 2025 – Present</p>
+                        <p className="text-primary font-medium"> Sunsyze •  Dec 2025 – Present</p>
                         <p className="mt-2 text-subtle">
                             Maintained and optimized a production HTML/CSS/JS + Tailwind website by delivering UI fixes, responsive improvements, and performance enhancements.
                         </p>
@@ -171,9 +171,9 @@ export default function About() {
                     </h2>
                     <div className="bg-card p-6 rounded-lg border border-card">
                         <h3 className="text-lg font-bold text-text">Bachelor of Technology in Computer Science</h3>
-                        <p className="text-primary">University of Technology • 2017 - 2021</p>
+                        <p className="text-primary">Maharaja Surajmal Institute of Technology (Affiliated with GGSIPU) • 2023 - 2027</p>
                         <p className="mt-2 text-subtle text-sm">
-                            Focused on Software Engineering, Data Structures, and System Architecture.
+                            Focusing on Software Engineering, Data Structures, and System Architecture.
                         </p>
                     </div>
                 </div>
@@ -187,19 +187,23 @@ export default function About() {
                         <ul className="space-y-3 text-subtle">
                             <li className="flex items-start gap-2">
                                 <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0" />
-                                <span>Built multiple production-quality full-stack applications</span>
+                                <span>JEE Mains 2023 – 91.92 percentile; CGPA 9.25, among the top 10% students in the program</span>
                             </li>
                             <li className="flex items-start gap-2">
                                 <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0" />
-                                <span>Hackathon participant (Hackcraft 2.0)</span>
+                                <span>Tech Head, Prakriti (MSIT) – Led technical initiatives and mentored juniors</span>
                             </li>
                             <li className="flex items-start gap-2">
                                 <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0" />
-                                <span>Completed technical training at Airtech India</span>
+                                <span>Solved 150+ Data Structures & Algorithms problems</span>
                             </li>
                             <li className="flex items-start gap-2">
                                 <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0" />
-                                <span>Consistent progress on Striver DSA patterns</span>
+                                <span>Built and deployed multiple production-grade full-stack and AI-powered web applications</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0" />
+                                <span>Selected Open Source Contributor – SSOC 2025; participated in multiple hackathons</span>
                             </li>
                         </ul>
                     </div>
