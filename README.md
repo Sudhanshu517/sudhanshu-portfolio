@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sudhanshu — Portfolio
 
-## Getting Started
+Personal developer portfolio built with Next.js (App Router), Tailwind CSS v4, Framer Motion, Lenis and a lazy-loaded React Three Fiber scene. JavaScript / JSX only.
 
-First, run the development server:
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Where the content lives
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+All copy and links are plain data files — edit these, not the components:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| File | What it controls |
+| --- | --- |
+| `data/profile.js` | Name, email, links, hero copy, stats, principles, hackathons, nav |
+| `data/projects.js` | CareConnect (flagship), the pinned showcase, the archive |
+| `data/skills.js` | Stack groups (also drives the tech ↔ project linking) |
+| `data/journey.js` | The timeline |
+| `data/engineering.js` | The two request-path walkthroughs |
 
-## Learn More
+Placeholder links are marked `REPLACE-ME` — search the repo for that string. A project with `placeholder: true` shows a "Details soon" tag until you remove the flag.
 
-To learn more about Next.js, take a look at the following resources:
+Every technology in `data/projects.js` `stack` arrays that also appears in `data/skills.js` is linked automatically in the Stack section.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+app/                 routes, metadata, sitemap/robots, page transition (template.js)
+components/
+  layout/            navbar, smooth scroll (Lenis), cursor, progress bar, theme toggle
+  sections/          Hero, About, Stack, Work, Engineering, ProblemSolving, Journey, Contact
+  project/           project visuals, CareConnect simulation, rows
+  three/             WebGL hero scene + static SVG fallback
+  ui/                Reveal, SplitText, ScrollText, Magnetic, Counter, TiltCard, Terminal, ...
+  viz/               pathfinding visualiser
+data/                content (see above)
+hooks/               media-query hooks (SSR-safe)
+lib/                 graph generator, shared class strings
+```
 
-## Deploy on Vercel
+## Design notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **System:** warm paper / ink with one signal-orange accent. Tokens live in `app/globals.css` (`:root` and `.dark`).
+- **Type:** Instrument Serif (display), Geist (UI), Geist Mono (labels).
+- **3D:** `three` + `@react-three/fiber` only, loaded after first paint and only when WebGL is usable. It pauses when off-screen, renders a single static frame under `prefers-reduced-motion`, and falls back to an SVG twin on low-power devices.
+- **Scroll-pinned sections** (project showcase, engineering walkthrough) only pin when the viewport is large enough to hold them; smaller screens get a stacked / stepper layout.
+- **Reduced motion:** Lenis, the marquee, cursor, magnetic and tilt effects are disabled.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Content sources
+
+Projects, experience and achievements come from the résumé (`public/resume.pdf`) and the previous version of this site. The CareConnect walkthrough and the code shown in the Engineering section are labelled as simulations / simplified illustrations.
